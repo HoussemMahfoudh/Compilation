@@ -1,0 +1,9 @@
+program id;
+
+var
+j : integer;
+
+begin
+readln(a);
+a := a * b ; 
+end.

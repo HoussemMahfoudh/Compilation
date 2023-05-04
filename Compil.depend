@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1578270996 source:e:\projet c\compil\main.c
+	<stdio.h>
+	<conio.h>
+	<stdlib.h>
+	<stdbool.h>
+	<ctype.h>
+	<string.h>
+

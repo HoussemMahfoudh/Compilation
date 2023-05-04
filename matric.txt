@@ -1,0 +1,75 @@
+int l,c;
+    char text_ptr[20][29][100];
+    FILE* fm = fopen("matrix.txt","w+");
+    // remplissage des non terminaux
+    for (l = 0; l < 20; l++){
+        for (c = 0; c < 29; c++){
+            strcpy(text_ptr[l][c],"");
+            //printf("%s | ",text_ptr[0][j]);
+            }
+    }
+
+        strcpy(text_ptr[0][0],"ter/nnT");
+        strcpy(text_ptr[1][0],"p"); strcpy(text_ptr[1][1],"program id ; dcl inst_compose .");
+        strcpy(text_ptr[2][0],"dcl");strcpy(text_ptr[2][4],"dcli");strcpy(text_ptr[2][8],"dcli");
+        strcpy(text_ptr[3][0],"dcli");strcpy(text_ptr[3][4],"var liste_id : type ; dcli");strcpy(text_ptr[3][8],"£");
+        strcpy(text_ptr[4][0],"liste_id");strcpy(text_ptr[4][2],"id liste_idi");
+        strcpy(text_ptr[5][0],"liste_idi");strcpy(text_ptr[5][7],", id liste_idi");strcpy(text_ptr[5][10],"£");
+        strcpy(text_ptr[6][0],"type");strcpy(text_ptr[6][5],"integer");strcpy(text_ptr[6][6],"char");
+        strcpy(text_ptr[7][0],"inst_compose");strcpy(text_ptr[7][8],"begin inst end");strcpy(text_ptr[7][27],"begin inst end");
+        strcpy(text_ptr[8][0],"inst");strcpy(text_ptr[8][2],"liste_inst");strcpy(text_ptr[8][9],"£");strcpy(text_ptr[8][13],"liste_inst");strcpy(text_ptr[8][15],"liste_inst");strcpy(text_ptr[8][17],"liste_inst");strcpy(text_ptr[8][18],"liste_inst");strcpy(text_ptr[8][19],"liste_inst");strcpy(text_ptr[8][20],"liste_inst");
+        strcpy(text_ptr[9][0],"liste_inst");strcpy(text_ptr[9][2],"i liste_insti");strcpy(text_ptr[9][12],"i liste_insti");strcpy(text_ptr[9][17],"i liste_insti");strcpy(text_ptr[9][18],"i liste_insti");strcpy(text_ptr[9][19],"i liste_insti");strcpy(text_ptr[9][17],"i liste_insti");strcpy(text_ptr[9][18],"i liste_insti");strcpy(text_ptr[9][19],"i liste_insti");strcpy(text_ptr[9][17],"i liste_insti");strcpy(text_ptr[9][18],"i liste_insti");strcpy(text_ptr[9][19],"i liste_insti");strcpy(text_ptr[9][20],"i liste_insti");
+        strcpy(text_ptr[10][0],"liste_insti");strcpy(text_ptr[10][3],"; i liste_insti");strcpy(text_ptr[10][9],";i liste_insti");
+        strcpy(text_ptr[11][0], "i");strcpy(text_ptr[11][2],"id : = exp_simple");strcpy(text_ptr[11][12],"if exp then i else i");strcpy(text_ptr[11][15],"while exp do I");strcpy(text_ptr[11][17],"read ( id )");strcpy(text_ptr[11][18],"readln ( id )");strcpy(text_ptr[11][19],"write ( id )");strcpy(text_ptr[11][20],"writeln ( id )");
+        strcpy(text_ptr[12][0],"exp");strcpy(text_ptr[12][2],"exp_simple expi");strcpy(text_ptr[12][24],"exp_simple expi");strcpy(text_ptr[12][25],"exp_simple expi");
+        strcpy(text_ptr[13][0],"expi");strcpy(text_ptr[13][13],"£");strcpy(text_ptr[13][16],"£");strcpy(text_ptr[13][21],"oprel exp-simple");
+        strcpy(text_ptr[14][0],"exp_simple");strcpy(text_ptr[14][2],"terme exp_simplei");strcpy(text_ptr[14][24],"terme exp_simplei");strcpy(text_ptr[14][25],"terme exp_simplei");
+        strcpy(text_ptr[15][0],"exp_simplei");strcpy(text_ptr[15][3],"£");strcpy(text_ptr[15][9],"£");strcpy(text_ptr[15][13],"£");strcpy(text_ptr[15][14],"£");strcpy(text_ptr[15][16],"£");strcpy(text_ptr[15][21],"£");strcpy(text_ptr[15][22],"opadd exp_simplei");
+        strcpy(text_ptr[16][0],"terme");strcpy(text_ptr[16][2],"facteur termei");strcpy(text_ptr[16][24],"facteur termei");strcpy(text_ptr[16][25],"facteur termei");
+        strcpy(text_ptr[17][0],"termei");strcpy(text_ptr[17][3],"£");strcpy(text_ptr[17][9],"£");strcpy(text_ptr[17][13],"£");strcpy(text_ptr[17][14],"£");strcpy(text_ptr[17][16],"£");strcpy(text_ptr[17][21],"£");strcpy(text_ptr[17][22],"£");strcpy(text_ptr[17][23],"opmul facteur termei");strcpy(text_ptr[17][26],"£");
+        strcpy(text_ptr[18][0],"facteur");strcpy(text_ptr[18][2],"id");strcpy(text_ptr[18][24],"nb");strcpy(text_ptr[18][25],"( exp_simple )");
+
+        //remplissage des terminaux
+
+        strcpy(text_ptr[0][1],"program");
+        strcpy(text_ptr[0][2],"id");
+        strcpy(text_ptr[0][3],";");
+        strcpy(text_ptr[0][4],"var");
+        strcpy(text_ptr[0][5],"integer");
+        strcpy(text_ptr[0][6],"char");
+        strcpy(text_ptr[0][7],",");
+        strcpy(text_ptr[0][8],"begin");
+        strcpy(text_ptr[0][9],"end");
+        strcpy(text_ptr[0][10] ,":");
+        strcpy(text_ptr[0][11],"=");
+        strcpy(text_ptr[0][12],"if");
+        strcpy(text_ptr[0][13],"then");
+        strcpy(text_ptr[0][14],"else");
+        strcpy(text_ptr[0][15],"while");
+        strcpy(text_ptr[0][16],"do");
+        strcpy(text_ptr[0][17],"read");
+        strcpy(text_ptr[0][18],"readln");
+        strcpy(text_ptr[0][19],"write");
+        strcpy(text_ptr[0][20],"writeln");
+        strcpy(text_ptr[0][21],"oprel");
+        strcpy(text_ptr[0][22] ,"opadd");
+        strcpy(text_ptr[0][23],"opmul");
+        strcpy(text_ptr[0][24] ,"nb");
+        strcpy(text_ptr[0][25],"(");
+        strcpy(text_ptr[0][26],")");
+        strcpy(text_ptr[0][27],".");
+        strcpy(text_ptr[0][28],"$");
+
+
+    for (l = 0; l< 20; l++){
+        for (c = 0; c < 29; c++){
+            fprintf(fm,"%31s |",text_ptr[l][c]);
+            //printf("%s | ",text_ptr[0][j]);
+        }
+        fprintf(fm,"\n");
+        for(int k=0; k<956;k++){
+            fprintf(fm,"-");
+        }
+        fprintf(fm,"\n");
+
+    }

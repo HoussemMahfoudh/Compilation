@@ -1,0 +1,1 @@
+p=>program id ; dcl inst_compose . =>dcli =>var liste_id : type ; dcli =>id liste_idi =>integer =>begin inst end =>liste_inst =>i liste_insti =>readln ( id ) =>; i liste_insti =>id : = exp_simple =>terme exp_simplei =>facteur termei =>id =>opmul facteur termei =>id =>; i liste_insti =>
